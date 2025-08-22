@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Safi</title>
 <style>
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic);
@@ -256,6 +257,117 @@ html, body {
   cursor: pointer;
   color: #888;
 }
+
+/* ======== RESPONSIVE PARA TELÉFONOS ======== */
+@media (max-width: 600px) {
+  body {
+    overflow-y: auto; /* permitir scroll en móviles */
+  }
+
+  #cake {
+    width: 150px;
+    height: auto;
+    margin: 2em auto 0 auto;
+  }
+
+  .text h1 {
+    font-size: 1.2em;
+  }
+
+  .text p {
+    font-size: 1em;
+  }
+
+  .carta {
+    width: 90%;
+    height: 160px;
+  }
+
+  .hojita {
+    width: 85%;
+    height: 130px;
+    font-size: 14px;
+  }
+
+  .modal-content {
+    width: 90%;
+    max-width: 350px;
+    padding: 18px;
+    font-size: 14px;
+  }
+
+  .modal-content h2 {
+    font-size: 18px;
+  }
+
+  .modal-content .firma {
+    font-size: 16px;
+  }
+}
+
+
+/* ======== EXTRA PARA PANTALLAS MUY PEQUEÑAS ======== */
+@media (max-width: 480px) {
+  #cake {
+    width: 120px;
+    margin: 1.5em auto 0 auto;
+  }
+
+  .carta {
+    width: 95%;
+    height: 140px;
+  }
+
+  .hojita {
+    width: 90%;
+    height: 110px;
+    font-size: 13px;
+  }
+
+  .text h1 {
+    font-size: 1em;
+  }
+
+  .text p {
+    font-size: 0.9em;
+  }
+
+  .modal-content {
+    width: 95%;
+    max-width: 300px;
+    padding: 14px;
+    font-size: 13px;
+  }
+
+  .modal-content h2 {
+    font-size: 16px;
+  }
+
+  .modal-content .firma {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 360px) {
+  #cake {
+    width: 100px;
+  }
+
+  .carta {
+    height: 120px;
+  }
+
+  .hojita {
+    height: 100px;
+    font-size: 12px;
+  }
+
+  .modal-content {
+    font-size: 12px;
+    padding: 12px;
+  }
+}
+
 </style>
 </head>
 <body>
